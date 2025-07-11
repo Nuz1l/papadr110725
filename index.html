@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('click', () => {
+    const music = document.getElementById('bgMusic');
+    if (music.paused) {
+      music.play();
+    }
+  });
+</script>
+
+
     <div class="background-animation">
         <span style="left:5%; animation-duration:12s;">🎈</span>
         <span style="left:15%; animation-duration:18s;">🎉</span>
@@ -17,8 +32,8 @@
         <span style="left:75%; animation-duration:15s;">🎂</span>
         <span style="left:85%; animation-duration:23s;">🥳</span>
         <span style="left:95%; animation-duration:17s;">🎁</span>
-
     </div>
+
     <div class="container">
         <h1 id="title">Туылган Кунынызбен!</h1>
         <h2 id="subtitle">Сізге үлкен алғыс пен махаббатпен</h2>
@@ -35,7 +50,6 @@
         <p class="signature" id="signature">
             Сүйіспеншілікпен, Сіздің ұлыңыз Нурасыл және жұбайыңыз Шынар ❤️
         </p>
-
     </div>
 </body>
 </html>
